@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="7.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MM.Common\MM.Common.csproj" />
+    <ProjectReference Include="..\MM.Database\MM.Database.csproj" />
+    <ProjectReference Include="..\MM.Orders.Contracts\MM.Orders.Contracts.csproj" />
+    <ProjectReference Include="..\MM.Orders\MM.Orders.csproj" />
+  </ItemGroup>
+
+</Project>

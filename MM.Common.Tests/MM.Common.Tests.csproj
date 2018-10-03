@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0-preview-20180816-01" />
+    <PackageReference Include="Moq" Version="4.9.0" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MM.Common.Contracts\MM.Common.Contracts.csproj" />
+    <ProjectReference Include="..\MM.Common\MM.Common.csproj" />
+    <ProjectReference Include="..\MM.Orders.Contracts\MM.Orders.Contracts.csproj" />
+    <ProjectReference Include="..\Moq.EntityFrameworkCore\Moq.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+</Project>
